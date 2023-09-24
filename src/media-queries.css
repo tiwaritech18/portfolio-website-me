@@ -1,0 +1,140 @@
+@media (max-width: 1020px) {
+  .about {
+    padding: 8rem 0;
+  }
+}@media (max-width: 1020px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}@media (max-width: 1020px) {
+  .text-side {
+    max-width: 54rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .text-side {
+    padding-right: 0;
+  }
+}
+@media (max-width: 1020px) {
+  .img-side span {
+    width: 17rem;
+    height: 17rem;
+    bottom: -3px;
+    right: 190px;
+  }
+}
+@media (max-width: 880px) {
+  .img-side span {
+    bottom: -3px;
+    right: 100px;
+  }
+}
+@media (max-width: 750px) {
+  .img-side span {
+    display: none;
+  }
+}@media (max-width: 1020px) {
+  .img-side span img {
+    width: 17rem;
+  }
+}
+@media (max-width: 1020px) {
+  .img-side__main-img {
+    margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .img-side__main-img {
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 1020px) {
+  .work-emoji {
+    bottom: 25px;
+    right: 245px;
+  }
+}
+@media (max-width: 880px) {
+  .work-emoji {
+    bottom: 57px;
+    right: 156px;
+  }
+}
+@media (max-width: 750px) {
+  .work-emoji {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .project-content {
+    text-align: center;
+  }
+}
+@media (max-width: 1020px) {
+  .projects-grid .pro__1 {
+    height: 75rem;
+    flex-direction: column !important;
+    gap: 3rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .projects-grid .pro__1 {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .projects-grid .pro__img {
+    width: 100%;
+  }
+}
+@media (max-width: 1020px) {
+  .projects-grid .pro__text {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .projects-grid .pro__text {
+    width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .container {
+    padding: 0 1.7rem;
+  }
+}@media (max-width: 1020px) {
+  .contact {
+    padding: 8rem 0;
+  }
+}@media (max-width: 750px) {
+  .contact__title {
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .contact__icons {
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  .contact__icon-box {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .footerc {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+  }
+}
