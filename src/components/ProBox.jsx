@@ -25,7 +25,7 @@ function ProBox({
               src={img}
               alt="website"
               style={{
-                transform: scroll ? `translateY(${scrollY})` : "translateY(0%)",
+                transform: scroll ? `translateY(${scrollY}%)` : "translateY(0%)",
                 transition: "transform 10s ease-in-out",
               }}
               onMouseEnter={() => setScroll(true)}

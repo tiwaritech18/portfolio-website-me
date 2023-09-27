@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import waveImg from "/images/waving.png";
+import waveImg from "../assets/waving.png";
 import "./Herosection.css"
 function HeroSection(){
 

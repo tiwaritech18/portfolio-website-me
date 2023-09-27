@@ -78,7 +78,7 @@
 
 
 .hero-img {
-  background-image: url("/images/profile-pic.png");
+  background-image: url("../assets/profile-pic.png");
   width: 35rem;
   height: 35rem;
   background-size: cover;
