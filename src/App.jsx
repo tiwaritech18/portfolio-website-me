@@ -1,22 +1,12 @@
 import './App.css';
 import './media-queries.css';
-import Navbar from './components/Navbar';
-import Herosection from './components/Herosection';
-import Footer from './components/Footer';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Home from './pages/Home';
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <Herosection />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Home />
     </>
   )
 }

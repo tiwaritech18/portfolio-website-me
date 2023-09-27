@@ -80,70 +80,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.about {
-  padding: 15rem 0;
-}
 
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.text-side {
-  padding-right: 1.5rem;
-}
-
-.text-side span {
-  -webkit-text-decoration: underline #147efb;
-          text-decoration: underline #147efb;
-}
-.text-side h1 {
-  font-size: 2rem;
-  color: var(--clr-accent);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-.text-side h4 {
-  font-size: 2.5rem;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.4;
-  margin-bottom: 2rem;
-}
-.text-side p {
-  font-size: 1.7rem;
-  font-family: "Mulish", sans-serif;
-  color: var(--clr-desc);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.img-side {
-  position: relative;
-}
-.img-side span {
-  width: 19rem;
-  height: 19rem;
-  position: absolute;
-  background-color: white;
-  bottom: -33px;
-  right: 33px;
-  border-radius: 50%;
-}
-
-.img-side img {
-  object-fit: cover;
-}
-
-.img-side__main-img {
-  width: 41rem;
-  height: 35rem;
-  border-radius: 1.7rem;
-}
 
 
 .work-emoji {

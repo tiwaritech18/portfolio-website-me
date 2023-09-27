@@ -1,11 +1,11 @@
-
+import "./About.css"
 function AboutSection() {
   return (
     <section className="about" id="about">
       <div className="container">
         <div className="about-content">
           <div className="img-side">
-            <img src="/assets/about-img.jpg" alt="mee" className="img-side__main-img" />
+            <img src="../images/about-img.png" alt="mee" className="img-side__main-img" />
           </div>
           <div className="text-side">
             <h1>About me</h1>
