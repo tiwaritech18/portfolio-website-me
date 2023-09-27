@@ -3,9 +3,9 @@ import ProBox from "./ProBox";
 
 function Projects() {
   const projectsImg = {
-    img1:"../images/carrental.png",
-    img2:"../images/ecommerce.png",
-    img3:"../images/clientsync.png",
+    img1:"../../images/carrental.png",
+    img2:"../../images/ecommerce.png",
+    img3:"../../images/clientsync.png",
   }
   return (
     <>
