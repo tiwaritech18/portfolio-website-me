@@ -1,6 +1,8 @@
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import waveImg from "../assets/waving.png";
 import "./Herosection.css"
+import { TypeAnimation } from 'react-type-animation';
+
 function HeroSection(){
 
   const skillsIcons = [
@@ -18,6 +20,7 @@ function HeroSection(){
     },
   ]
   return (
+
     <section id="home" className="hero">
       <div className="container">
         <div className="content">
@@ -25,8 +28,26 @@ function HeroSection(){
             <div className="hero-text">
               <h1>Front-End React Developer</h1>
               <img src={waveImg} alt="waving_hand" />
-              <p>Hi, I am Rohit Tiwari. A passionate Front-end Developer based in Uttarakhand, India. 📍</p>
-              <span>
+              
+              <TypeAnimation
+                  sequence={[
+                    'Hi, I am Rohit Tiwari.',
+                    500,
+                    'Hi, I am Rohit Tiwari. A passionate Front-end Developer', //  Continuing previous Text
+                    500,
+                    'Hi, I am Rohit Tiwari. A passionate Front-end Developer based in Uttarakhand, India.',
+                    500,
+                    'Hi, I am Rohit Tiwari. A passionate Front-end Developer',
+                    500,
+                    'Hi, I am Rohit Tiwari',
+                    500,
+                    '',
+                    500,
+                  ]}
+                  style={{ fontSize: '2em' , color: 'white' }}
+                  repeat={Infinity}
+              />
+            <span>
                 <a 
                   aria-label="linkedin" rel="noreferrer" 
                   target="_blank" 
