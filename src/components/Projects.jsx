@@ -43,8 +43,8 @@ function Projects() {
                 description="With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need."
                 techno1="React"
                 techno2="Vanila CSS"
-                code="https://github.com/tiwaritech18/craftShop/tree/master"
-                demo="https://e-commerce-6xxlmtuhc-tiwaritech18.vercel.app/"
+                code="https://github.com/tiwaritech18/e-commerce"
+                demo="https://e-commerce-j6uyqca19-tiwaritech18.vercel.app/"
                 scrollY={ScrollY[1]}
                 icon="🛒"
                 cName="reversed-proj"
