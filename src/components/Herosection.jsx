@@ -44,7 +44,7 @@ function HeroSection(){
                     500,
                   ]}
                   style={{ fontSize: '2em' , color: 'white' }}
-                  repeat={Infinity}
+                  repeat={3}
               />
             <span>
                 <a 
