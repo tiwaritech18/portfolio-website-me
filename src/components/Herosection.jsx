@@ -26,9 +26,8 @@ function HeroSection(){
         <div className="content">
           <div className="hero-main">
             <div className="hero-text">
-              <h1 className="animate__backInLeft">Front-End React Developer</h1>
-              <img src={waveImg} alt="waving_hand" />
-              
+              <h1 className="animate__animated animate__backInLeft">Front-End React Developer</h1>
+              <img className="animate__animated animate__backInLeft" src={waveImg} alt="waving_hand" />
               <TypeAnimation
                   sequence={[
                     'Hi, I am Rohit Tiwari.',
