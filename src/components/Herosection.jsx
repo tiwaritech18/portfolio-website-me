@@ -26,7 +26,7 @@ function HeroSection(){
         <div className="content">
           <div className="hero-main">
             <div className="hero-text">
-              <h1>Front-End React Developer</h1>
+              <h1 className="animate__backInLeft">Front-End React Developer</h1>
               <img src={waveImg} alt="waving_hand" />
               
               <TypeAnimation
@@ -35,7 +35,7 @@ function HeroSection(){
                     500,
                     'Hi, I am Rohit Tiwari. A passionate Front-end Developer', //  Continuing previous Text
                     500,
-                    'Hi, I am Rohit Tiwari. A passionate Front-end Developer based in Uttarakhand, India.',
+                    'Hi, I am Rohit Tiwari. A passionate Front-end Developer based in Uttarakhand, India.📍',
                     500,
                     'Hi, I am Rohit Tiwari. A passionate Front-end Developer',
                     500,
