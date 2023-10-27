@@ -44,7 +44,7 @@ function Projects() {
                 techno1="React"
                 techno2="Vanila CSS"
                 code="https://github.com/tiwaritech18/e-commerce"
-                demo="https://e-commerce-j6uyqca19-tiwaritech18.vercel.app/"
+                demo="https://e-commerce-zeta-eosin.vercel.app/"
                 scrollY={ScrollY[1]}
                 icon="🛒"
                 cName="reversed-proj"
