@@ -31,7 +31,7 @@ function Projects() {
                 techno2="CSS"
                 techno3="Context API"
                 code="https://github.com/tiwaritech18/car-rental-platform"
-                demo="car-rental-platform-deployed.vercel.app"
+                demo="https://car-rental-platform-deployed.vercel.app"
                 icon="🚗"
               />
 
@@ -45,7 +45,7 @@ function Projects() {
                 techno2="SCSS"
                 techno3="Context API"
                 code="https://github.com/tiwaritech18/tulos"
-                demo="tulos.vercel.app"
+                demo="https://tulos.vercel.app"
                 icon="🛒"
                 cName="reversed-proj"
               />
@@ -60,7 +60,7 @@ function Projects() {
                 techno2="CSS"
                 techno3="Material UI"
                 code="https://github.com/tiwaritech18/e-commerce"
-                demo="e-commerce-zeta-eosin.vercel.app"
+                demo="https://e-commerce-zeta-eosin.vercel.app"
                 icon="📥"
                 
               />
