@@ -1,0 +1,167 @@
+.project-container{
+  background-color: rgba(83, 79, 79, 0.32);
+  display: flex;
+  padding: 4rem 1rem;
+  border-radius: 20px;
+}
+@media (max-width:860px){
+  .project-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+.pro__img img{
+  height: 280px;
+  object-fit: contain;
+}
+
+@media (max-width:910px){
+  .pro__img img{
+    height: 250px;
+    object-fit: contain;
+  }
+}
+
+
+.mobile__frame img{
+  height: 200px;
+  width: 100px;
+  object-fit: contain;
+}
+.projects-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.project-images{
+  position: relative;
+}
+
+.mobile__frame{
+  position: absolute;
+  top: 90px;
+  right: 20px;
+}
+
+.pro__text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  padding: 1rem 1rem;
+  align-items: flex-start;
+}
+
+@media (max-width:860px){
+  .pro__text{
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+
+.pro__text h3{
+  font-size: 1.75rem;
+  color: var(--clr-accent);
+}
+
+
+.pro__text p{
+  font-size: 1.25rem;
+  margin:1rem 0;
+  color: rgba(255, 255, 255, 0.783);
+}
+
+.stack{
+  display: flex;
+  gap: 1rem;
+  margin:1rem 0;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin: .75rem 1rem;
+
+}
+@media (max-width:860px){
+  .links{
+    margin-top:1.4rem;
+  }
+  }
+.links a{
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: rgb(222, 214, 214);
+}
+
+.links a:hover{
+  color: violet;
+}
+
+.reversed-proj{
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width:860px){
+  .project-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .reversed-proj .mobile__frame{
+    left: 20px;
+  }
+  }
+
+.project-content h3{
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+@media (max-width:860px){
+  .pro__text h3{
+    margin-top:3.5rem;
+  }
+}
+
+@media (max-width:560px){
+  .pro__img img{
+    height: 200px;
+    object-fit: contain;
+  }
+  .mobile__frame{
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+  .mobile__frame img{
+    height: 170px;
+    width: 100px;
+    object-fit: contain;
+  }
+  .reversed-proj .mobile__frame{
+    left: -250px;
+  }
+  }
+
+  .additional-p{
+    color: black;
+    margin: 1rem;
+    margin-top: 3rem;
+    background-color: white;
+    display: inline-block;
+    padding: .75rem 1rem;
+    border-radius: 210px; 
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  
+  .additional-p:hover{
+    text-decoration: underline;
+    color: violet;
+  }

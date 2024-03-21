@@ -1,28 +1,29 @@
 .hero {
-  display: flex;
   background-color: var(--clr-secondary);
-  flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 80svh;
   position: relative;
 }
-
 
 .hero-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 2rem;
   position: relative;
 }
 
+.resume a{
+  text-decoration: none;
+}
 
 .content {
+  padding-top:10rem ;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
   height: 65rem;
-  gap: 10rem;
   position: relative;
 }
 
@@ -34,12 +35,12 @@
   position: relative;
 }
 .hero-text h1 {
-  font-size: 5.5rem;
+  font-size: 8rem;
   line-height: 1.2;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: var(--clr-accent);
-  font-family: 'Russo One', sans-serif;
-  margin-bottom: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
@@ -54,12 +55,18 @@
 .hero-text span {
   display: flex;
   gap: 1.5rem;
-  margin: 4rem 0;
+  margin: 3rem 0;
   cursor: pointer;
 }
 .hero-text span a {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
-  color: var(--clr-primary);
+  color: black;
 }
 
 .hero-text span a {
@@ -108,13 +115,17 @@
   font-size: 1.7rem;
   color: #767676;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
+  margin-left: 7.2rem;
+  margin-top: 2rem;
+  
+
 }
 
 .skills p {
-  margin-right: 7rem;
+  margin-right: 3rem;
   padding-right: 2rem;
   border-right: 2px solid var(--clr-accent);
   font-family: "Mulish", sans-serif;
@@ -145,7 +156,7 @@
 @media (max-width: 900px) {
   .hero {
     height: auto;
-    padding: 11rem 0;
+    padding: 1rem 0;
   }
 }@media (max-width: 900px) {
   .hero-main {
@@ -159,6 +170,7 @@
   .content {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     height: auto;
     gap: 3rem;
   }
@@ -225,6 +237,7 @@
   .skills {
     position: initial;
     flex-direction: column;
+    margin: 0;
   }
 }@media (max-width: 900px) {
   .skills p {
@@ -238,5 +251,52 @@
 }@media (max-width: 900px) {
   .skills ul {
     justify-content: center;
+  }
+}
+
+.resume{
+  display: flex;
+  gap: 1.75rem;
+  margin-left: 7rem;
+  margin-bottom:2rem;
+  margin-top: 1rem;
+}
+.btn{
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: none;
+  gap: .75rem;
+  font-family: inherit;
+  font-weight:500 ;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+
+.contact-me-btn{
+  background-color: rgb(82, 78, 78);
+  color: white;
+  font-weight: 500;
+}
+
+.resume-download-btn:hover{
+  background-color:var(--clr-accent);
+color: white;
+}
+.contact-me-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+@media (max-width:900px){
+  .resume{
+    margin: 0;
+  }
+}
+@media (max-width:758px){
+  .resume{
+    margin: 0;
   }
 }

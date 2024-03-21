@@ -1,0 +1,57 @@
+/* ContactForm.css */
+.contact-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15rem 0 ;
+}
+
+@media (max-width:768px) {
+  .contact-form-container{
+    padding: 10rem 1rem;
+  }
+}
+
+.contact-form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--clr-accent);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: var(--clr-accent);
+  color: #000000a7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.2s ease-in;
+}
+
+.submit-btn:hover {
+  background-color: #228b4b;
+}

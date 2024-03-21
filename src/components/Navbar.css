@@ -85,12 +85,15 @@ nav ul {
   list-style: none;
   gap: 3rem;
 }
+
 nav ul a {
   color: var(--clr-text);
   text-decoration: none;
   transition: all 0.23s;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 15px;
 }
+
 
 nav ul a:hover {
   color: var(--clr-accent);
@@ -101,14 +104,18 @@ nav ul a:active {
 }
 
 .logo {
-  font-family: 'Gochi Hand', cursive;
-  font-size: 45px;
   cursor: pointer;
   color: var(--clr-text);
   transition:all 0.3s ;
 }
+.alternate-text{
+  color:rgb(219, 139, 82);
+}
+
+
 .logo:hover{
   transform: scale(1.2);
+ color: bisque;
 }
 @media (max-width: 900px) {
   .mobile-menu {
@@ -123,4 +130,13 @@ nav ul a:active {
   nav ul a {
     display: none;
   }
+}
+
+.home-link{
+  color: white;
+  text-decoration: none;
+}
+
+.active{
+  color: var(--clr-accent);
 }

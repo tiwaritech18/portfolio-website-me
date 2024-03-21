@@ -1,6 +1,7 @@
 import  React, { useState } from 'react';
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import './Navbar.css';
+import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,38 +10,41 @@ function Navbar() {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const pageUp = () => {
-    window.scrollTo({
-      top: (0,0), behavior: "smooth"
-    })
-  }
+
   const navLinks = [
     {
-      name:'Home',
-      link:'#home'
+      name: 'Home',
+      to: '/', // Use 'to' prop for React Router links
     },
     {
-      name:'About',
-      link:'#about'
+      name: 'About',
+      to: '/about',
     },
     {
-      name:'Projects',
-      link:'#projects'
+      name: 'Projects',
+      to: '/addprojects',
     },
     {
-      name:'Contact',
-      link:'#contact'
+      name: 'Contact',
+      to: '/contact',
     },
-  ]
+  ];
 
   return (
     <React.Fragment>
       <nav>
-      <h3 className="logo" onClick={pageUp}>RT.</h3>
+      <Link to="/" onClick={toggleMobileMenu} className='home-link'>
+          Rohit <span className="alternate-text">Tiwari</span>
+        </Link>
       <ul>
       {navLinks.map((item) => (
             <li key={item.name}>
-              <a href={item.link}>{item.name}</a>
+               <NavLink
+              to={item.to}
+              activeClassName="active" // Style active link
+            >
+              {item.name}
+            </NavLink>
             </li>
           ))}
         <li>
@@ -59,7 +63,7 @@ function Navbar() {
         <ul>
           {navLinks.map((item) => (
             <li key={item.name} onClick={toggleMobileMenu} >
-              <a href={item.link}>{item.name}</a>
+               <Link to={item.to}>{item.name}</Link>
             </li> 
           ))}
         </ul>

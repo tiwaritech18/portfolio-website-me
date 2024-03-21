@@ -1,5 +1,7 @@
 .about {
   padding: 15rem 0;
+  /* height: 100svh; */
+  margin-top: 10rem;
 }
 
 
@@ -21,6 +23,7 @@
 }
 .text-side h1 {
   font-size: 2rem;
+  font-family: inherit;
   color: var(--clr-accent);
   text-transform: uppercase;
   font-weight: 700;
@@ -32,16 +35,24 @@
   line-height: 1.4;
   margin-bottom: 2rem;
 }
+
 .text-side p {
   font-size: 1.7rem;
-  font-family: "Mulish", sans-serif;
+  font-family: inherit;
   color: var(--clr-desc);
   font-weight: 500;
   line-height: 1.5;
 }
 
+.bold-text{
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
 .img-side {
   position: relative;
+  padding: 1rem 0;
+
 }
 .img-side span {
   width: 19rem;
@@ -56,9 +67,22 @@
 .img-side img {
   object-fit: contain;
   transition: all 0.3s ease-in-out;
+  image-rendering: optimizeQuality;
+  image-rendering: crisp-edges;
+  border-inline-start: 2px solid white;
+  border-block-start: 2px solid white;
+  border-image-source: radial-gradient(
+    circle at top left,
+    var(--clr-accent),
+    transparent 40%
+  );
+  border-image-slice: 1;
+  padding: 40px;
+  border-radius: 10px;
+  filter: brightness(110%) contrast(150%)opacity(0.5) saturate(200%);
 }
 .img-side img:hover {
-  scale: 1.2;
+  filter: brightness(100%) contrast(100%)opacity(0.7) saturate(200%);
 }
 
 .img-side__main-img {

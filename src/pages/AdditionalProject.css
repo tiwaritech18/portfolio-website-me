@@ -1,0 +1,51 @@
+.additional-project-container{
+  padding-top: 10rem;
+  height: 100vh;
+}
+.projects {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
+
+.single-project{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor:crosshair;
+}
+
+.single-project button{
+  background-color: none;
+  color: rgb(182, 181, 181);
+  background: none;
+  border: none;
+  cursor:crosshair;
+  padding-top: 5rem;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.addproject-container{
+  position: absolute;
+  z-index: 999; /* Ensure it appears on top of other content */
+  width: 400px;
+}
+
+.single-project button:hover{
+  background-color: white;
+  color: black;
+}
+
+@media (max-width:758px){
+  .addproject-container{
+    width: 300px;
+    padding: 1rem;
+    
+  }
+}
+
