@@ -47,5 +47,8 @@
     padding: 1rem;
     
   }
+  .project-content h3{
+    text-align: center;
+  }
 }
 

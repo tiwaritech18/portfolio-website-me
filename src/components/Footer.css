@@ -10,12 +10,24 @@ footer h3 {
   font-size: 1.7rem;
   color: white;
 }
+@media (max-width:758px){
+  footer h3 {
+    font-size: 1rem;
+    color: white;
+  }
+}
 
 .footerc {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width:758px){
+  .footerc{
+    flex-direction: column;
+  }
 }
 
 .footerc__socials {
@@ -28,6 +40,12 @@ footer h3 {
 .footerc__socials a {
   font-size: 2.3rem;
   color: white;
+}
+@media (max-width:758px){
+  .footerc__socials a {
+    font-size: 1.25rem;
+    color: white;
+  }
 }
 .footerc__socials a:hover {
   transform: scale(1.2);
