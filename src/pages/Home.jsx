@@ -1,7 +1,7 @@
 import Herosection from "../components/Herosection";
 import About from "../components/About";
 import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
       <Herosection />
       <About />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }

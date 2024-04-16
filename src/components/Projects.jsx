@@ -4,7 +4,7 @@ import rentMobile from "../assets/rent_mobile.png";
 import tulosDesktop from "../assets/tulos_desktop.png"
 import tulosMobile from "../assets/tulos_mobile.png";
 import dashboardMobile from "../assets/dashboard-mobile.png";
-import dashboardDesktop from "../assets/dashboard-desktop.png"
+import dashboardDesktop from "../assets/dashboard-laptop.png"
 import "./Project.css"
 import { Link } from "react-router-dom";
 function Projects() {
@@ -68,7 +68,6 @@ function Projects() {
           </div>
         <div className="more-projects">
           <Link to="/addprojects">
-
           <p className="additional-p">Additional projects</p>
           </Link>
         </div>
