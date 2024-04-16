@@ -25,6 +25,10 @@ function HeroSection() {
       img: "https://skillicons.dev/icons?i=scss,tailwind",
       id: 3,
     },
+    {
+      img: "https://skillicons.dev/icons?i=nextjs,mongodb",
+      id: 3,
+    },
   ];
   return (
     <section id="home" className="hero">

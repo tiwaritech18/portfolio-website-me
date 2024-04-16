@@ -24,10 +24,6 @@ function Navbar() {
       name: 'Projects',
       to: '/addprojects',
     },
-    {
-      name: 'Contact',
-      to: '/contact',
-    },
   ];
 
   return (
