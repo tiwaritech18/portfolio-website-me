@@ -4,8 +4,17 @@ import stileImg from "../assets/stile_desktop.png";
 import clientImg from "../assets/add-project-1.png";
 import githubImg from "../assets/add-project-2.png";
 import listlyImg from "../assets/listly.png";
+import dashboardLaptop from "../assets/dashboard-laptop.png";
 
 export const Projects = [
+  {
+    id: 7,
+    name: "Next JS Dashboard",
+    description: "This customer invoice dashboard, built with Next.js, PostgreSQL, and NextAuth.js, offers a real-time view of your customer data. Visualize key metrics, drill down into individual invoices, and filter by various criteria. The secure and scalable framework empowers informed decision-making through improved customer management and data visibility.",
+    techstack: ["Next JS", "Tailwind", "PostreSQL"],
+    link: "https://next-js-dashboard-nu-five.vercel.app/",
+    img: dashboardLaptop,
+  },
   {
     id: 1,
     name: "Tulos Ecommerce",

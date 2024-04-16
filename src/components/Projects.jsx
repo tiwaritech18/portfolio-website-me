@@ -3,8 +3,8 @@ import rentDesktop from "../assets/rent_desktop.png";
 import rentMobile from "../assets/rent_mobile.png";
 import tulosDesktop from "../assets/tulos_desktop.png"
 import tulosMobile from "../assets/tulos_mobile.png";
-import stileMobile from "../assets/stile_mobile.png";
-import stileDesktop from "../assets/stile_desktop.png"
+import dashboardMobile from "../assets/dashboard-mobile.png";
+import dashboardDesktop from "../assets/dashboard-desktop.png"
 import "./Project.css"
 import { Link } from "react-router-dom";
 function Projects() {
@@ -51,17 +51,17 @@ function Projects() {
               />
 
               <ProBox
-                title="Stile E-commerce"
-                date="(June 2023)"
-                desktopImg={stileDesktop}
-                mobileImg={stileMobile}
-                description="This project is a frontend application for an e-commerce website built with React and Vite .It includes components for displaying products, categories, and more. The project utilizes a responsive design and leverages Material-UI for icons. Styling is done using vanilla CSS."
-                techno1="React"
-                techno2="CSS"
-                techno3="Material UI"
-                code="https://github.com/tiwaritech18/e-commerce"
-                demo="https://e-commerce-zeta-eosin.vercel.app"
-                icon="📥"
+                title="Next Js Dashboard"
+                date="(march 2024)"
+                desktopImg={dashboardDesktop}
+                mobileImg={dashboardMobile}
+                description="This customer invoice dashboard, built with Next.js, PostgreSQL, and NextAuth.js, offers a real-time view of your customer data. Visualize key metrics, drill down into individual invoices, and filter by various criteria. The secure and scalable framework empowers informed decision-making through improved customer management and data visibility."
+                techno1="Next Js"
+                techno2="Tailwind"
+                techno3="PostgreSQL"
+                code="https://github.com/tiwaritech18/next-js-dashboard"
+                demo="https://next-js-dashboard-nu-five.vercel.app/"
+                icon="🎫"
                 
               />
             </div>
