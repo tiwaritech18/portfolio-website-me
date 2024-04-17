@@ -9,9 +9,11 @@ import { Link } from "react-router-dom";
 
 
 function HeroSection() {
-  const handleContact = () => {
-  
-  }
+  const emailAddress = 'rt82736736@gmail.com';
+  const generateGmailComposeLink = () => {
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}`;
+  };
+
   const skillsIcons = [
     {
       img: "https://skillicons.dev/icons?i=html,css",
@@ -76,8 +78,8 @@ function HeroSection() {
               <IconDownload width={18} />
             </button>
                 </a>
-            <Link to="/contact">
-              <button className="btn contact-me-btn" onClick={handleContact}>
+            <Link to={generateGmailComposeLink()} target="_blank" rel="noopener">
+              <button className="btn contact-me-btn" >
                 Contact me here
                 <IconArrowRight width={18} />
               </button>
