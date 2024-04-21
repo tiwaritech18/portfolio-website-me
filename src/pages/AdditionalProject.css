@@ -1,6 +1,7 @@
 .additional-project-container{
   padding-top: 10rem;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 20rem;
 }
 .projects {
   display: flex;
@@ -44,11 +45,12 @@
 @media (max-width:758px){
   .addproject-container{
     width: 300px;
-    padding: 1rem;
+    padding: 1rem 20rem;
     
   }
   .project-content h3{
     text-align: center;
   }
+
 }
 

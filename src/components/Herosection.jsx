@@ -16,21 +16,18 @@ function HeroSection() {
 
   const skillsIcons = [
     {
-      img: "https://skillicons.dev/icons?i=html,css",
+      img: "https://skillicons.dev/icons?i=html,css,js",
       id: 1,
     },
     {
-      img: "https://skillicons.dev/icons?i=js,react",
+      img: "https://skillicons.dev/icons?i=scss,react,ts",
       id: 2,
     },
     {
-      img: "https://skillicons.dev/icons?i=scss,tailwind",
+      img: "https://skillicons.dev/icons?i=nextjs,tailwind,mongodb",
       id: 3,
     },
-    {
-      img: "https://skillicons.dev/icons?i=nextjs,mongodb",
-      id: 3,
-    },
+    
   ];
   return (
     <section id="home" className="hero">
@@ -70,7 +67,7 @@ function HeroSection() {
           <div className="resume">
             <a
                   aria-label="cv"
-                  href="../assets/resume.pdf"
+                  href="../assets/resume_rohit_tiwari.pdf"
                   download={true}
                 >
                   <button className="btn resume-download-btn">
