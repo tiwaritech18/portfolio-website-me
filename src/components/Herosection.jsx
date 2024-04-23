@@ -1,17 +1,18 @@
 import {
   IconArrowRight,
-  IconBrandGithub,
-  IconBrandLinkedin,
   IconDownload,
 } from "@tabler/icons-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import "./Herosection.css";
 import { Link } from "react-router-dom";
 
-
 function HeroSection() {
-  const emailAddress = 'rt82736736@gmail.com';
+  const emailAddress = "rt82736736@gmail.com";
   const generateGmailComposeLink = () => {
-    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}`;
+    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+      emailAddress
+    )}`;
   };
 
   const skillsIcons = [
@@ -27,7 +28,6 @@ function HeroSection() {
       img: "https://skillicons.dev/icons?i=nextjs,tailwind,mongodb",
       id: 3,
     },
-    
   ];
   return (
     <section id="home" className="hero">
@@ -39,8 +39,8 @@ function HeroSection() {
                 Front-End Developer
               </h1>
               <p>
-                'Hi, I am Rohit Tiwari. A passionate Front-end Developer based
-                in Uttarakhand, India.📍'
+                ~ Hi, I am Rohit Tiwari. A passionate Front-end Developer based
+                in Uttarakhand, India.📍
               </p>
               <span>
                 <a
@@ -49,7 +49,7 @@ function HeroSection() {
                   target="_blank"
                   href="https://www.linkedin.com/in/Therohittiwari/"
                 >
-                  <IconBrandLinkedin width={32} height={32} />
+                  <FaLinkedin width={32} height={32} />
                 </a>
 
                 <a
@@ -58,7 +58,7 @@ function HeroSection() {
                   target="_blank"
                   href="https://github.com/tiwaritech18"
                 >
-                  <IconBrandGithub width={32} height={32} />
+                  <FaGithub  />
                 </a>
               </span>
             </div>
@@ -66,24 +66,27 @@ function HeroSection() {
           </div>
           <div className="resume">
             <a
-                  aria-label="cv"
-                  href="../assets/resume_rohit_tiwari.pdf"
-                  download={true}
-                >
-                  <button className="btn resume-download-btn">
-              Download Resume
-              <IconDownload width={18} />
-            </button>
-                </a>
-            <Link to={generateGmailComposeLink()} target="_blank" rel="noopener">
-              <button className="btn contact-me-btn" >
+              aria-label="cv"
+              href="https://drive.google.com/file/d/1kOtq9ekaB9xcdysCkDzR3Dt4daCyJ7o9/view?usp=drive_link"
+              download={true}
+            >
+              <button className="btn resume-download-btn">
+                Download Resume
+                <IconDownload width={18} />
+              </button>
+            </a>
+            <Link
+              to={generateGmailComposeLink()}
+              target="_blank"
+              rel="noopener"
+            >
+              <button className="btn contact-me-btn">
                 Contact me here
                 <IconArrowRight width={18} />
               </button>
             </Link>
           </div>
           <div className="skills">
-            
             <p>Tech Stack</p>
             <div className="logos">
               <ul>
