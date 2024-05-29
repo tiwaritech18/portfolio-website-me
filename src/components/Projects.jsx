@@ -42,8 +42,8 @@ function Projects() {
                 mobileImg={tulosMobile}
                 description="With a focus on simplicity and clean design, this store prioritize user experience, making it easy for customers to find and purchase the products they need."
                 techno1="React"
-                techno2="SCSS"
-                techno3="Context API"
+                techno2="MySql"
+                techno3="Php"
                 code="https://github.com/tiwaritech18/tulos"
                 demo="https://tulos.vercel.app"
                 icon="🛒"

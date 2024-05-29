@@ -21,11 +21,11 @@ function HeroSection() {
       id: 1,
     },
     {
-      img: "https://skillicons.dev/icons?i=scss,react,ts",
+      img: "https://skillicons.dev/icons?i=tailwind,react,ts",
       id: 2,
     },
     {
-      img: "https://skillicons.dev/icons?i=nextjs,tailwind,mongodb",
+      img: "https://skillicons.dev/icons?i=php,mysql,mongodb",
       id: 3,
     },
   ];
