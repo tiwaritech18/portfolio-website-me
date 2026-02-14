@@ -17,15 +17,15 @@ function HeroSection() {
 
   const skillsIcons = [
     {
-      img: "https://skillicons.dev/icons?i=html,css,js",
+      img: "https://skillicons.dev/icons?i=html,css",
       id: 1,
     },
     {
-      img: "https://skillicons.dev/icons?i=tailwind,react,ts",
+      img: "https://skillicons.dev/icons?i=js,react",
       id: 2,
     },
     {
-      img: "https://skillicons.dev/icons?i=php,mysql,mongodb",
+      img: "https://skillicons.dev/icons?i=scss,tailwind",
       id: 3,
     },
   ];
