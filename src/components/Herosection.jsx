@@ -67,7 +67,7 @@ function HeroSection() {
           <div className="resume">
             <a
               aria-label="cv"
-              href="https://drive.google.com/file/d/1kOtq9ekaB9xcdysCkDzR3Dt4daCyJ7o9/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1kVG1U7pM91sygNj7Ycjxq8u_dZVEzKT-/view?usp=drive_link"
               download={true}
             >
               <button className="btn resume-download-btn">
