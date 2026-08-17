@@ -1,24 +1,38 @@
-import { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import './media-queries.css';
-import Home from './pages/Home';
-import AdditionalProjects from './pages/AdditionalProjects';
-import Loader from './utils/Loader';
-import AboutSection from './components/About';
-import ContactSection from './components/Contact';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+
+import { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+import "./App.css";
+import "./media-queries.css";
+
+import Home from "./pages/Home";
+import AdditionalProjects from "./pages/AdditionalProjects";
+import Loader from "./utils/Loader";
+import AboutSection from "./components/About";
+import ContactSection from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [showSite, setShowSite] = useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLoading(false);
-    }, 5000);
 
-    return () => clearTimeout(timeoutId); // Cleanup function to clear timeout
+      // Small delay lets the loader fade out
+      // before the portfolio fades in.
+      setTimeout(() => {
+        setShowSite(true);
+      }, 300);
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
@@ -26,16 +40,33 @@ function App() {
       {loading ? (
         <Loader />
       ) : (
-        <>
-          <Navbar/>
+        <div className={`site ${showSite ? "site-visible" : ""}`}>
+          <Navbar />
+
           <Routes>
-            <Route path='/addprojects' element={<AdditionalProjects />} />
-            <Route path='/about' element={<AboutSection />} />
-            <Route path='/contact' element={<ContactSection />} />
-            <Route path='/' element={<Home />} />
+            <Route
+              path="/addprojects"
+              element={<AdditionalProjects />}
+            />
+
+            <Route
+              path="/about"
+              element={<AboutSection />}
+            />
+
+            <Route
+              path="/contact"
+              element={<ContactSection />}
+            />
+
+            <Route
+              path="/"
+              element={<Home />}
+            />
           </Routes>
-          <Footer/>
-        </>
+
+          <Footer />
+        </div>
       )}
     </Router>
   );

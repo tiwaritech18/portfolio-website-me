@@ -127,3 +127,26 @@ h6 {
   gap: 1rem;
   margin: .95rem 0;
 }
+
+.about-reveal {
+  transform: translateX(-50px);
+}
+
+.about-reveal.is-visible {
+  transform: translateX(0);
+}
+
+
+.site {
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.site-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

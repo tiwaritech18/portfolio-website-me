@@ -3,101 +3,172 @@ import {
   IconDownload,
 } from "@tabler/icons-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import "./Herosection.css";
-import { Link } from "react-router-dom";
 
 function HeroSection() {
   const emailAddress = "rt82736736@gmail.com";
-  const generateGmailComposeLink = () => {
-    return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-      emailAddress
-    )}`;
-  };
 
-  const skillsIcons = [
+  // Gmail compose URL
+  const gmailComposeLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+    emailAddress
+  )}`;
+
+  // Current Cloud & Systems skills
+  const currentSkillsIcons = [
     {
-      img: "https://skillicons.dev/icons?i=html,css",
+      img: "https://skillicons.dev/icons?i=aws,linux",
       id: 1,
+      alt: "AWS and Linux",
     },
     {
-      img: "https://skillicons.dev/icons?i=js,react",
+      img: "https://skillicons.dev/icons?i=powershell,windows",
       id: 2,
-    },
-    {
-      img: "https://skillicons.dev/icons?i=scss,tailwind",
-      id: 3,
+      alt: "PowerShell and Windows",
     },
   ];
+
+  // Previous development skills
+  const developmentSkillsIcons = [
+    {
+      img: "https://skillicons.dev/icons?i=html,css,js",
+      id: 1,
+      alt: "HTML CSS and JavaScript",
+    },
+    {
+      img: "https://skillicons.dev/icons?i=react,nextjs,ts",
+      id: 2,
+      alt: "React Next.js and TypeScript",
+    },
+    {
+      img: "https://skillicons.dev/icons?i=tailwind,redux",
+      id: 3,
+      alt: "Tailwind CSS and Redux",
+    },
+    {
+      img: "https://skillicons.dev/icons?i=mongodb,mysql",
+      id: 4,
+      alt: "MongoDB and MySQL",
+    },
+  ];
+
   return (
     <section id="home" className="hero">
       <div className="container">
         <div className="content">
+
+          {/* ================= HERO MAIN ================= */}
           <div className="hero-main">
+
+            {/* Hero Text */}
             <div className="hero-text">
               <h1 className="animate__animated animate__backInLeft">
-                Front-End Developer
+                Technical Support
+                <br />
+                <span>→ Cloud</span>
               </h1>
+
               <p>
-                ~ Hi, I am Rohit Tiwari. A passionate Front-end Developer based
-                in Uttarakhand, India.📍
+                ~ Hi, I am Rohit Tiwari. Senior Technical Support Advisor
+                building my skills in Cloud, Systems & Infrastructure,
+                based in Uttarakhand, India. 📍
               </p>
-              <span>
+
+              {/* Social Links */}
+              <div className="social-links">
                 <a
-                  aria-label="linkedin"
-                  rel="noreferrer"
-                  target="_blank"
+                  aria-label="LinkedIn"
                   href="https://www.linkedin.com/in/Therohittiwari/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FaLinkedin width={32} height={32} />
+                  <FaLinkedin />
                 </a>
 
                 <a
-                  aria-label="github"
-                  rel="noreferrer"
-                  target="_blank"
+                  aria-label="GitHub"
                   href="https://github.com/tiwaritech18"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <FaGithub  />
+                  <FaGithub />
                 </a>
-              </span>
+              </div>
             </div>
+
+            {/* Hero Image */}
             <div className="hero-img"></div>
           </div>
+
+          {/* ================= BUTTONS ================= */}
           <div className="resume">
+
+            {/* Resume */}
             <a
-              aria-label="cv"
+              aria-label="Download Resume"
               href="https://drive.google.com/file/d/1kVG1U7pM91sygNj7Ycjxq8u_dZVEzKT-/view?usp=drive_link"
-              download={true}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <button className="btn resume-download-btn">
+              <button className="btn resume-download-btn" type="button">
                 Download Resume
                 <IconDownload width={18} />
               </button>
             </a>
-            <Link
-              to={generateGmailComposeLink()}
+
+            {/* Contact */}
+            <a
+              aria-label="Contact me"
+              href={gmailComposeLink}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
-              <button className="btn contact-me-btn">
+              <button className="btn contact-me-btn" type="button">
                 Contact me here
                 <IconArrowRight width={18} />
               </button>
-            </Link>
+            </a>
           </div>
+
+          {/* ================= CURRENT SKILLS ================= */}
           <div className="skills">
-            <p>Tech Stack</p>
+            <p>Cloud &amp; Systems</p>
+
             <div className="logos">
               <ul>
-                {skillsIcons.map((icon) => (
+                {currentSkillsIcons.map((icon) => (
                   <li key={icon.id}>
-                    <img src={icon.img} alt="skill-icon" />
+                    <img
+                      src={icon.img}
+                      alt={icon.alt}
+                      loading="lazy"
+                    />
                   </li>
                 ))}
               </ul>
             </div>
           </div>
+
+          {/* ================= DEVELOPMENT SKILLS ================= */}
+          <div className="skills development-skills">
+            <p>Development</p>
+
+            <div className="logos">
+              <ul>
+                {developmentSkillsIcons.map((icon) => (
+                  <li key={icon.id}>
+                    <img
+                      src={icon.img}
+                      alt={icon.alt}
+                      loading="lazy"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

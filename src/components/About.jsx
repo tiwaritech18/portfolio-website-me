@@ -1,5 +1,5 @@
 import "./About.css"; // Import your About.css file
-import aboutImg from "../assets/about-img.jpeg"; // Import your about image
+import aboutImg from "../assets/about-img.png"; // Import your about image
 
 function AboutSection() {
   return (
@@ -10,13 +10,43 @@ function AboutSection() {
             <img src={aboutImg} alt="About me" className="img-side__main-img" />
           </div>
           <div className="text-side">
-            <h1>About me</h1>
-            <h4>
-              A dedicated Front-end Developer <br /> based in Uttarakhand, India{" "}
-            </h4>
-            <p>Fresh out of college with a degree in Computer Science, I was eager to solidify my programming foundation. Through Udemy courses, I dived headfirst into the world of web development. Now, I am proficient in the core languages of the web: <span className="bold-text">HTML, CSS, and JavaScript.</span> I have also mastered powerful front-end frameworks like <span className="bold-text">Tailwind</span> for rapid UI development and  <span className="bold-text">React and Next JS</span> for building dynamic and scalable user interfaces. My thirst for knowledge extends beyond the front-end. I have explored database technologies like <span className="bold-text">Mongodb and SQL</span> giving me a well-rounded understanding of web application development.  When I am not coding, you might find me capturing the beauty of nature through photography during my travels, or cheering on my favorite sports teams. </p>
+  <h1>About me</h1>
 
-          </div>
+  <h4>
+    Senior Technical Support Advisor <br />
+    <span>Building towards Cloud & Systems Engineering</span>
+  </h4>
+
+  <p className="about-text">
+    I'm a{" "}
+    <span className="highlight-primary">
+      Senior Technical Support Advisor
+    </span>{" "}
+    with <span className="highlight-number">2+ years</span> of experience in
+    technical troubleshooting, problem-solving, and customer support.
+
+    <br /><br />
+
+    I'm currently building my expertise in{" "}
+    <span className="highlight-cloud">
+      Cloud, Networking, Linux & Systems
+    </span>
+    , with a focus on transitioning into{" "}
+    <span className="highlight-primary">
+      Cloud Support and Systems Engineering
+    </span>
+    .
+
+    <br /><br />
+
+    I also have a background in software development, with experience in{" "}
+    <span className="highlight-tech">
+      JavaScript, React, Next.js, SQL & MongoDB
+    </span>
+    , giving me an understanding of both applications and the infrastructure
+    behind them.
+  </p>
+</div>
         </div>
       </div>
     </section>
